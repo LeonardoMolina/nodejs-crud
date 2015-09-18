@@ -3,6 +3,7 @@ var express         = require("express"),
     bodyParser      = require("body-parser"),
     methodOverride  = require("method-override"),
     mongoose        = require('mongoose');
+    handlebar       = require('handlebars')
 
 // Connection to DB
 mongoose.connect('mongodb://localhost/tvshows', function(err, res) {
@@ -18,6 +19,11 @@ app.use(methodOverride());
 var models     = require('./models/pain')(app, mongoose);
 var PainController = require('./controllers/pain');
 
+var router = express.Router();
+router.get('/', function(req, res) {
+  res.send("Hello world!");
+});
+
 
 // API routes
 var painScoreRouter = express.Router();
@@ -28,11 +34,14 @@ painScoreRouter.route('/painScores')
   .get(PainController.findAllPainScores)
   .post(PainController.addPainScore);
 
+painScoreRouter.route('/delete')
+  .post(PainController.deleteAll);
+
 painScoreRouter.route('/painScores/:id')
   .get(PainController.findById)
-  .put(PainController.updatePainScore)
+  .put(PainController.updatePainScore);
 
-//app.use('/api', painScoreRouter);
+app.use('/api', painScoreRouter);
 
 // Start server
 app.listen(3000, function() {

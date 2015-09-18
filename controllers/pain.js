@@ -14,10 +14,9 @@ exports.findAllPainScores = function(req, res) {
 //GET - Return a pain score for specified ID
 exports.findById = function(req, res) {
 	empleados.findById(req.params.id, function(err, pain) {
-    if(err) return res.send(500, err.message);
-
-    console.log('GET /painScore/' + req.params.id);
-		res.status(200).jsonp(pain);
+            if(err) return res.send(500, err.message);
+            console.log('GET /painScore/' + req.params.id);
+	    res.status(200).jsonp(pain);
 	});
 };
 
@@ -25,16 +24,14 @@ exports.findById = function(req, res) {
 exports.addPainScore = function(req, res) {
 	console.log('POST');
 	console.log(req.body);
-
 	var painScore = new empleados({
 		name:     req.body.name,
 		score: 	  req.body.score,
 		comment:  req.body.comment,
 	});
-
 	painScore.save(function(err, pain) {
 		if(err) return res.send(500, err.message);
-        res.status(200).jsonp(pain);
+                res.status(200).jsonp(pain);
 	});
 };
 
@@ -50,5 +47,13 @@ exports.updatePainScore = function(req, res) {
       res.status(200).jsonp(pain);
 		});
 	});
+};
+
+//POST - Delete all entries
+exports.deleteAll = function(req, res) {
+        empleados.remove({}, function(err, pain) {
+                  if(err) return res.send(500, err.message);
+                  res.status(200).jsonp(pain);
+       });
 };
 
