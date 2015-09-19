@@ -4,13 +4,17 @@ var express         = require("express"),
     methodOverride  = require("method-override"),
     mongoose        = require('mongoose');
     handlebar       = require('handlebars')
+    html_dir = './html/';
+    path = require("path");
 
-// Connection to DB
+// Connection to mongo DB
 mongoose.connect('mongodb://localhost/tvshows', function(err, res) {
   if(err) throw err;
   console.log('Connected to Database');
 });
 
+// Path for html files
+app.use(express.static(path.join(__dirname, 'html')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(methodOverride());
@@ -19,16 +23,13 @@ app.use(methodOverride());
 var models     = require('./models/pain')(app, mongoose);
 var PainController = require('./controllers/pain');
 
-var router = express.Router();
-router.get('/', function(req, res) {
-  res.send("Hello world!");
-});
-
-
-// API routes
+// API router
 var painScoreRouter = express.Router();
-
 app.use(painScoreRouter);
+
+painScoreRouter.get('/', function(req, res) {
+  res.send("Pati pati pati pati!");
+});
 
 painScoreRouter.route('/painScores')
   .get(PainController.findAllPainScores)
@@ -41,7 +42,13 @@ painScoreRouter.route('/painScores/:id')
   .get(PainController.findById)
   .put(PainController.updatePainScore);
 
+app.get('/pati', function(req, res) {
+   res.sendFile(html_dir +'test.html', { root: __dirname });
+});
+
+
 app.use('/api', painScoreRouter);
+
 
 // Start server
 app.listen(3000, function() {
