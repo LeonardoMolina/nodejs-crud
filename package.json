@@ -1,11 +1,13 @@
 {
-  "name": "node-api-rest-example",
-  "version": "2.0.0",
+  "name": "node-crud-mongo",
+  "version": "1.0.0",
   "dependencies": {
     "mongoose": "~3.6.11",
     "express": "^4.7.1",
     "method-override": "^2.1.2",
     "body-parser": "^1.5.1",
-    "handlebars": "~4.0.2"
+    "handlebars": "~4.0.2",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
   }
 }
