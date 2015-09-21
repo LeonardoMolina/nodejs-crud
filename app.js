@@ -42,8 +42,20 @@ painScoreRouter.route('/painScores/:id')
   .get(PainController.findById)
   .put(PainController.updatePainScore);
 
-app.get('/pati', function(req, res) {
-   res.sendFile(html_dir +'test.html', { root: __dirname });
+app.get('/create', function(req, res) {
+   res.sendFile(html_dir +'create.html', { root: __dirname });
+});
+
+app.get('/read', function(req, res) {
+   res.sendFile(html_dir +'read.html', { root: __dirname });
+});
+
+app.get('/delete', function(req, res) {
+   res.sendFile(html_dir +'delete.html', { root: __dirname });
+});
+
+app.get('/modify', function(req, res) {
+   res.sendFile(html_dir +'modify.html', { root: __dirname });
 });
 
 
