@@ -28,7 +28,7 @@ var painScoreRouter = express.Router();
 app.use(painScoreRouter);
 
 painScoreRouter.get('/', function(req, res) {
-  res.send("Pati pati pati pati!");
+  res.sendFile(html_dir +'main.html', { root: __dirname });
 });
 
 painScoreRouter.route('/painScores')
@@ -41,6 +41,10 @@ painScoreRouter.route('/delete')
 painScoreRouter.route('/painScores/:id')
   .get(PainController.findById)
   .put(PainController.updatePainScore);
+
+app.get('/buscar', function(req, res) {
+   res.send("Pati pati pati pati!");
+});
 
 app.get('/create', function(req, res) {
    res.sendFile(html_dir +'create.html', { root: __dirname });
