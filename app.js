@@ -14,7 +14,8 @@ mongoose.connect('mongodb://localhost/template', function(err, res) {
 });
 
 // Path for html files
-app.use(express.static(path.join(__dirname, 'html')));
+
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(methodOverride());
@@ -28,7 +29,7 @@ var painScoreRouter = express.Router();
 app.use(painScoreRouter);
 
 painScoreRouter.get('/', function(req, res) {
-  res.sendFile(html_dir +'main.html', { root: __dirname });
+  res.sendFile('public/html/main.html', { root: __dirname });
 });
 
 painScoreRouter.route('/painScores')
