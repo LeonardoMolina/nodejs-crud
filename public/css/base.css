@@ -1,10 +1,10 @@
 
-.dropdown:hover {background-color: black;}
+.dropdown:hover {background-color: #F44D3C;}
 .dropdown:hover .dropdown-menu {display: block; background-color: #282828;}   
 .dropdown-menu li>a{color:white;transition: all 0.3s; }
 
-.dropdown-menu li>a:hover{background:black; color:white;}
-.nav .navbar-nav:hover {background-color: black;}
+.dropdown-menu li>a:hover{background:#F44D3C; color:white;}
+.nav .navbar-nav:hover {background-color: #F44D3C;}
 
 .dropdown:hover > .dropdown-menu .leo {
 	display:none;
