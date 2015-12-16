@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Fluxa Inmobiliaria</title>
+    <title>Fluxa Negocios Inmobiliarios</title>
 
     <meta name="description" content="This one page example has a fixed navbar and full page height sections. Each section is vertically centered on larger screens, and then stack responsively on smaller screens. Scrollspy is used to activate the current menu item. This layout also has a contact form example. Uses animate.css, FontAwesome, Google Fonts (Lato and Bitter) and Bootstrap." />
 
@@ -107,7 +107,7 @@
                     </form>
                 </li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="#">Ingresar</a></li>
+                <li><a  data-toggle="modal" data-target="#myModal" href="#">Ingresar</a></li>
             </ul>
         </div>
 
@@ -116,11 +116,11 @@
 
 <section class="container-fluid" id="section1">
     <div class="v-center">
-        <h1 class="text-center">Fluxa Inmobiliaria</h1>
+        <h1 class="text-center">Fluxa Negocios Inmobiliarios</h1>
         <h2 class="text-center lato animate slideInDown">La <b>Mejor</b> Inmobiliaria de Mar del Plata</h2>
         <p class="text-center">
             <br>
-            <a href="#" class="btn btn-danger btn-lg btn-huge lato" data-toggle="modal" data-target="#myModal">Conozcanos!</a>
+            <a href="#" class="btn btn-danger btn-lg btn-huge lato" >Conozcanos!</a>
         </p>
     </div>
     <a href="#section2">
@@ -133,6 +133,7 @@
 </section>
 
 <section class="container-fluid" id="section2">
+    <h1 class="text-center">Que es lo que hacemos ?</h1>
     <div class="container v-center">
         <div class="row">
             <div class="col-sm-4">
@@ -140,11 +141,17 @@
                     <div class="col-sm-12 text-center">
                         <div class="panel panel-default slideInLeft animate">
                             <div class="panel-heading">
-                                <h3>Venta</h3></div>
+                                <h3>Ventas</h3></div>
                             <div class="panel-body">
                                 <p>There is other content and snippets of details or features that can be placed here..</p>
-                                <hr>GO
+
                                 <hr>
+                                    <a class="btn btn-danger btn-lg lato">Departamentos</a></hr>
+                                    <hr><a class="btn btn-danger btn-lg lato">Casas</a></hr>
+                                    <hr><a class="btn btn-danger btn-lg lato">Locales y Oficinas</a></hr>
+                                    <hr><a class="btn btn-danger btn-lg lato">Galpones y Depositos</a></hr>
+                                    <hr><a class="btn btn-danger btn-lg lato">Terrenos Urbanos</a>
+                                </hr>
                             </div>
                         </div>
                     </div>
@@ -155,11 +162,16 @@
                     <div class="col-sm-12 text-center">
                         <div class="panel panel-default slideInUp animate">
                             <div class="panel-heading">
-                                <h3>Alquiler</h3></div>
+                                <h3>Alquileres</h3></div>
                             <div class="panel-body">
                                 <p>There is other content and snippets of details or features that can be placed here..</p>
-                                <hr>GO
                                 <hr>
+                                    <a class="btn btn-danger btn-lg lato">Departamentos</a></hr>
+                                    <hr><a class="btn btn-danger btn-lg lato">Casas</a></hr>
+                                    <hr><a class="btn btn-danger btn-lg lato">Locales y Oficinas</a></hr>
+                                    <hr><a class="btn btn-danger btn-lg lato">Galpones y Depositos</a></hr>
+                                    <hr><a class="btn btn-danger btn-lg lato">Terrenos Urbanos</a>
+                                </hr>
                             </div>
                         </div>
                     </div>
@@ -173,8 +185,10 @@
                                 <h3>Tasasiones</h3></div>
                             <div class="panel-body">
                                 <p>There is other content and snippets of details or features that can be placed here..</p>
-                                <hr>GO
                                 <hr>
+                                    <a class="btn btn-danger btn-lg lato">Vender Mi Propiedad</a></hr>
+                                    <hr><a class="btn btn-danger btn-lg lato">Alquilar mi propiedad</a> 
+                                </hr>
                             </div>
                         </div>
                     </div>
@@ -446,16 +460,16 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-3 column">
-                <h4>Information</h4>
+                <h4>Informacion</h4>
                 <ul class="nav">
-                    <li><a href="about-us.html">Products</a></li>
-                    <li><a href="about-us.html">Services</a></li>
-                    <li><a href="about-us.html">Benefits</a></li>
-                    <li><a href="elements.html">Developers</a></li>
+                    <li><a href="about-us.html">Alquiler</a></li>
+                    <li><a href="about-us.html">Ventas</a></li>
+                    <li><a href="about-us.html">Tasasiones</a></li>
+                    <li><a href="elements.html">Terrenos</a></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-md-3 column">
-                <h4>Follow Us</h4>
+                <h4>Seguinos en</h4>
                 <ul class="nav">
                     <li><a href="#">Twitter</a></li>
                     <li><a href="#">Facebook</a></li>
@@ -464,26 +478,26 @@
                 </ul>
             </div>
             <div class="col-xs-6 col-md-3 column">
-                <h4>Contact Us</h4>
+                <h4>Contacto</h4>
                 <ul class="nav">
                     <li><a href="#">Email</a></li>
-                    <li><a href="#">Headquarters</a></li>
-                    <li><a href="#">Management</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Oficina</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Soporte</a></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-md-3 column">
-                <h4>Customer Service</h4>
+                <h4>Servicio al cliente</h4>
                 <ul class="nav">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Delivery Information</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Informacion de contrato</a></li>
+                    <li><a href="#">Politica de Privacidad</a></li>
+                    <li><a href="#">Terminos &amp; Condiciones</a></li>
                 </ul>
             </div>
         </div>
         <!--/row-->
-        <p class="text-right">©2015</p>
+        <p class="text-right">Inmobiliaria FLUXA PROPIEDADES de Miguel Fluxa (Ingeniero Civil) | © 2015   fluxapropiedades.com.ar  | Todos los derechos reservados.</p>
     </div>
 </footer>
 
@@ -496,10 +510,10 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h2 class="text-center"><img src="//placehold.it/110" class="img-circle"><br>Login</h2>
+                <h2 class="text-center"><img src="//placehold.it/110" class="img-circle"><br>Ingresar</h2>
             </div>
             <div class="modal-body row">
-                <h6 class="text-center">COMPLETE THESE FIELDS TO SIGN UP</h6>
+                <h6 class="text-center">Completar el formulario para entrar</h6>
                 <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
                     <div class="form-group">
                         <input type="text" class="form-control input-lg" placeholder="Email">
@@ -508,13 +522,13 @@
                         <input type="password" class="form-control input-lg" placeholder="Password">
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-danger btn-lg btn-block">Sign In</button>
-                        <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span>
+                        <button class="btn btn-danger btn-lg btn-block">Ingresar</button>
+                        <span class="pull-right"><a href="#">Registrarse</a></span><span><a href="#">Necesitas ayuda?</a></span>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <h6 class="text-center"><a href="">Privacy is important to us. Click here to read why.</a></h6>
+                <h6 class="text-center"><a href="">La privacidad es importante para nosotros. Clickea para saber por que..</a></h6>
             </div>
         </div>
     </div>
