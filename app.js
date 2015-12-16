@@ -8,10 +8,10 @@ var express         = require("express"),
     path = require("path");
 
 // Connection to mongo DB
-mongoose.connect('mongodb://localhost/template', function(err, res) {
-  if(err) throw err;
-  console.log('Connected to Database');
-});
+//mongoose.connect('mongodb://localhost/template', function(err, res) {
+//  if(err) throw err;
+//  console.log('Connected to Database');
+//});
 
 // Path for html files
 
