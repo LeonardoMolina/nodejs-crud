@@ -37,3 +37,8 @@
 	overflow: hidden;
 }
 
+.navbar {   
+    box-shadow: 0 8px 6px -6px #111;
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+}
+
