@@ -14,7 +14,6 @@ var express         = require("express"),
 //});
 
 // Path for html files
-
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -29,7 +28,7 @@ var painScoreRouter = express.Router();
 app.use(painScoreRouter);
 
 painScoreRouter.get('/', function(req, res) {
-  res.sendFile('public/html/main.html', { root: __dirname });
+  res.sendFile('public/html/index.html', { root: __dirname });
 });
 
 painScoreRouter.route('/painScores')
@@ -68,5 +67,5 @@ app.use('/api', painScoreRouter);
 
 // Start server
 app.listen(process.env.PORT || 5000, function() {
-  console.log("Node server running on http://localhost:18320");
+  console.log("Node server running on http://localhost:5000");
 });
