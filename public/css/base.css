@@ -1,6 +1,5 @@
-
 .dropdown:hover {background-color: #F44D3C;}
-.dropdown:hover .dropdown-menu {display: block; background-color: #282828;}   
+.dropdown:hover .dropdown-menu {display: block; background-color: #000;}   
 .dropdown-menu li>a{color:white;transition: all 0.3s; }
 
 .dropdown-menu li>a:hover{background:#F44D3C; color:white;}
