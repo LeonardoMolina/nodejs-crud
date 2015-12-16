@@ -41,3 +41,8 @@
     background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
 }
 
+div.box { background: #EEE; height: 100px; width: 600px; }
+div.div1{background: #999; float: left; height: 100%; width: auto; }
+div.div2{ background: #666; height: 100%; }
+div.clear { clear: both; height: 1px; overflow: hidden; font-size:0pt; margin-top: -1px; }
+
