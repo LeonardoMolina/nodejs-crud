@@ -23,5 +23,17 @@
     top: 0;
     margin-left: -1px;
     margin-top: 0px;
-   
 }
+
+.logo {
+	position: absolute;
+	top: -20px;
+	left: 49.1%;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	margin: 0px 0px 0px -88px;
+	z-index: 10;
+	overflow: hidden;
+}
+
