@@ -66,8 +66,7 @@ app.get('/modify', function(req, res) {
 
 app.use('/api', painScoreRouter);
 
-
 // Start server
-app.listen(18320, function() {
+app.listen(process.env.PORT || 5000, function() {
   console.log("Node server running on http://localhost:18320");
 });
