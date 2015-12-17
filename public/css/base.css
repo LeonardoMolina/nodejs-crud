@@ -41,5 +41,10 @@
     background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
 }
 
+.carousel-content {
+    color:white;
+    display:flex;
+    align-items:center;
+}
 
 
