@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Bitter:400);
 
 html,body {
-	height:100%;
+	  height:100%;
     background:center no-repeat fixed url('fondo2.jpg');
     background-size: cover;
     color:#444;
@@ -164,7 +164,7 @@ section {
 }
 
 #section6 {
-    background-color: #eee;
+  background-color: #eee;
 	min-height:130px;
 	padding-top:40px;
 	padding-bottom:40px;
