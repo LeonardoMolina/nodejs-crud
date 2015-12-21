@@ -28,7 +28,7 @@ var painScoreRouter = express.Router();
 app.use(painScoreRouter);
 
 painScoreRouter.get('/', function(req, res) {
-  res.sendFile('public/html/tittle.html', { root: __dirname });
+  res.sendFile('public/html/main.html', { root: __dirname });
 });
 
 painScoreRouter.route('/painScores')
