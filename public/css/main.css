@@ -1,0 +1,94 @@
+body, html {
+	width: 100%;
+	height: 100%;	
+	margin: 0px;
+}
+
+.menu {
+	transition: all 0.4s;
+}
+
+.menucito {
+	width: 100%;
+	height: 100%;
+}
+
+.menu-izquierda {
+	float: left;
+    height: 70%;
+	width: 50%;
+	background-color: rgba(0, 100, 0, 1);
+	border: 4px solid black;
+	
+}
+
+.menu-derecha {
+	float: left;
+	width: 50%;
+	height: 70%;
+	background-color: rgba(100, 0, 0, 1);
+	border: 4px solid black;
+}
+
+.menu-abajo {
+	float: left;
+	width: 100%;
+    height: 30%;
+	background-color: rgba(143, 70, 70, 1);
+	border: 4px solid black;
+}
+
+.menucito.izquierda .menu-izquierda {
+	width: 90%;
+	height: 90%;
+	background-color: rgba(0, 100, 0, 0.3);
+}
+
+.menucito.izquierda .menu-derecha {
+	width: 10%;
+	height: 90%;
+}
+
+.menucito.derecha .menu-derecha {
+	width: 90%;
+	height: 90%;
+	background-color: rgba(100, 0, 0, 0.3);
+}
+
+.menucito.derecha .menu-abajo {
+	height: 10%;
+}
+
+.menucito.izquierda .menu-abajo {
+	height: 10%;
+}
+
+.menucito.derecha .menu-izquierda {
+	width: 10%;
+	height: 90%;
+}
+
+.menucito.arriba .menu-abajo {
+	height: 75%;
+	background-color: rgba(143, 70, 70, 0.3);	
+}
+
+.menucito.arriba .menu-derecha {
+	height: 25%;
+}
+
+.menucito.arriba .menu-izquierda {
+	height: 25%;	
+}
+
+.menu-izquierda:hover {
+	background-color: rgba(0, 100, 0, 0.3);
+}
+
+.menu-abajo:hover {
+	background-color: rgba(143, 70, 70, 0.3);	
+}
+
+.menu-derecha:hover {
+	background-color: rgba(100, 0, 0, 0.3);
+}

@@ -12,18 +12,128 @@
     <link rel="stylesheet" type="text/css" href="fonts/basefonts.css" />
     <link rel="stylesheet" type="text/css" href="fonts/awesomefonts.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 
 <body>
-    
-    <div class="main-background">
+	<div style="margin-top:20px;position: fixed;z-index: 9999999999;left: 0;top: 0;right: 0;">
+        <nav role="navigation" class="navbar navbar-inverse">
 
-        <img src="img/logo.png"  title="Fluxá Servicios Inmobiliarios" class="ri"> 
+        <a href="#/" class="navbar-brand">Fluxá Propiedades</a>
+        
+             
+        <div id="navbarCollapse" class="collapse navbar-collapse">
 
+            
+            <ul class="nav navbar-nav" style="right: 50%;padding-right: 90px;">
+                <li class="nav navbar-nav"><a href="#" title="Inicio">Inicio</a></li>
+                
+                <li class="dropdown" >
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#" title="Venta de propiedades en Mar del Plata">Venta <b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a href="#"> &gt; &nbsp; Departamentos</a>
+                            <ul role="menu" class="dropdown-menu leo">
+                                <li><a href="#"> &gt; &nbsp; Monoambiente</a></li>
+                                <li><a href="#"> &gt; &nbsp; 1 Dormitorio</a></li>
+                                <li><a href="#"> &gt; &nbsp; 2 Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; 3 Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; 4+ Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; de pasillo</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#"> &gt; &nbsp; Casas</a>
+                            <ul role="menu" class="dropdown-menu leo">
+                                <li><a href="#"> &gt; &nbsp; Monoambiente</a></li>
+                                <li><a href="#"> &gt; &nbsp; 1 Dormitorio</a></li>
+                                <li><a href="#"> &gt; &nbsp; 2 Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; 3 Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; 4+ Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; de pasillo</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-menu-item"><a href="#"> &gt; &nbsp; Locales y Oficinas</a></li>
+                        <li class="dropdown-menu-item"><a href="#"> &gt; &nbsp; Galpones</a></li>
+                        <li class="dropdown-menu-item"><a href="#"> &gt; &nbsp; Terrenos Urbanos</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#" title="Alquiler de propiedades en Mar del Plata">Alquiler <b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a href="#"> &gt; &nbsp; Departamentos</a>
+                            <ul role="menu" class="dropdown-menu leo">
+                                <li><a href="#"> &gt; &nbsp; Monoambiente</a></li>
+                                <li><a href="#"> &gt; &nbsp; 1 Dormitorio</a></li>
+                                <li><a href="#"> &gt; &nbsp; 2 Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; 3 Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; 4+ Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; de pasillo</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#"> &gt; &nbsp; Casas</a>
+                            <ul role="menu" class="dropdown-menu leo">
+                                <li><a href="#"> &gt; &nbsp; Monoambiente</a></li>
+                                <li><a href="#"> &gt; &nbsp; 1 Dormitorio</a></li>
+                                <li><a href="#"> &gt; &nbsp; 2 Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; 3 Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; 4+ Dormitorios</a></li>
+                                <li><a href="#"> &gt; &nbsp; de pasillo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"> &gt; &nbsp; Locales y Oficinas</a></li>
+                        <li><a href="#"> &gt; &nbsp; Galpones</a></li>
+                        <li><a href="#"> &gt; &nbsp; Terrenos Urbanos</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <a href="#"><img class="logo" src="img/logo.jpg"  title="Fluxá Servicios Inmobiliarios"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form role="search" class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" placeholder="Buscar..." class="form-control">
+                        </div>
+                    </form>
+                </li>
+                <li><a href="#section4">Contacto</a></li>
+                <li><a  data-toggle="modal" data-target="#myModal" href="#">Ingresar</a></li>
+            </ul>
+            
+        </div>
+
+        </nav>
+    </div>
+
+    <div class="menucito">
+    	<div class="menu-izquierda menu" data-menu="izquierda">
+
+	    </div>
+
+	    <div class="menu-derecha menu" data-menu="derecha">
+
+	    </div>
+
+	    <div class="menu-abajo menu" data-menu="arriba">
+
+		</div>
     </div>
 
     <script src="vendor/jquery/dist/jquery.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(".menu").click( function (el) {
+    		debugger;
+    		$(".menucito").removeClass("izquierda derecha arriba abajo");
+    		$(".menucito").addClass($(el.target).data("menu"));
+    	});
+    </script>
 </body>
 </html>
