@@ -27,8 +27,12 @@ var PainController = require('./controllers/pain');
 var painScoreRouter = express.Router();
 app.use(painScoreRouter);
 
-painScoreRouter.get('/', function(req, res) {
+painScoreRouter.get('/main', function(req, res) {
   res.sendFile('public/html/main.html', { root: __dirname });
+});
+
+painScoreRouter.get('/', function(req, res) {
+  res.sendFile('public/html/tittle.html', { root: __dirname });
 });
 
 painScoreRouter.route('/painScores')

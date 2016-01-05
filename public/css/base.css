@@ -84,5 +84,6 @@ img.ri:empty
 	top: 0;
 	right: 0;
 	bottom: 0;
+	float:left;
 	background-color: rgba(0, 0, 0, 0.9);
 }
