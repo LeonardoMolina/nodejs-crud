@@ -15,9 +15,22 @@
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
 
 </head>
 
+ <script>
+    $(window).scroll(function() {
+        $('#contacto').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+10) {
+                $(this).addClass("slideLeft");
+            }
+        });
+    });
+    </script>
 <body>
 	<div style="margin-top:20px;position: fixed;z-index: 9999999999;left: 0;top: 0;right: 0;">
         <nav role="navigation" class="navbar navbar-inverse">
@@ -128,8 +141,9 @@
 		</div>
     </div>
 
-    <div class="pie">
-    	<div class="contacto" >
+    <div class="pie" >
+    	<div class="contacto" id="whatsapp" >
+            
           <div class="titulo" align="center">
             Contactanos
           </div>
@@ -163,5 +177,7 @@
     		$(".menucito").addClass($(el.target).data("menu"));
     	});
     </script>
+
+   
 </body>
 </html>
